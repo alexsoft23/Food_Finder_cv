@@ -96,22 +96,14 @@ input[type="search"] {
     font-family: 'Lato', sans-serif;
 }
 
-/*| Navigation |*/
 
 
 
-nav{
-
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: #fff;
-}
 nav ul{
     list-style: none;
     position: relative;
     float: right;
-    margin-right: 100px;
+    margin-right: 20px;
     display: inline-table;
 
 }
