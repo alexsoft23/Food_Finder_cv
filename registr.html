@@ -34,27 +34,56 @@
         </div>
     </div>
 
+	<div class="container">
+	<legend><h2>Регістрація: </h2></legend>
+    <div class="form">
+        <form class="form-horizontal" action="./registr.html" method="POST" name="form1" id="form" role="form" >
+			
+			<div class="form-group">
+				<legend><h3>Загальна інфоррмація про заклад:</h3></legend>
+                <label class="control-label col-sm-2">Назва<input class="form-control" type="text" name="name" placeholder="Введіть назву"/> </label>
+                <label class="control-label col-sm-2">Тип<select class="form-control" id="type" name="type">
+					<option>Бар</option>
+					<option>Кафе</option>
+					<option>Комплекс</option>
+					<option>Фаст-фуд</option>
+					<option>Кондитерська</option>
+					<option>Чайна</option>
+					<option>Кофейня</option>
+					<option>Паб</option>
+					<option>Піцерія</option>
+					<option>Ресторан</option>
+					<option>Столова</option>
+					<option>Суші-бар</option>
+				</select></label>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-4">Опис<textarea class="form-control" rows="5" id="info"></textarea></label>
+			</div>
 
-        <div class="form">
-            <form action="./registr.html" method="POST" name="form1" id="form">
-
-                    <legend><h3>Заклад: </h3></legend>
-                <p><label>Назва<input type="text" name="name"/> </label></p>
-                <p><label>Тип<input type="text" name="name"/> </label></p>
-
-
-
-
-
-
+			
+			<div class="form-group">
+				<legend><h3>Додаткові опції:</h3></legend>
+                <label><input class="checkbox-inline" type="checkbox" value="Банкетний зал">Банкетний зал</label>
+				<label><input class="checkbox-inline" type="checkbox" value="Банкетний зал">Доставка їжі</label>
+				<label><input class="checkbox-inline" type="checkbox" value="Банкетний зал">Дитяче меню</label>
+                <label><input class="checkbox-inline" type="checkbox" value="Банкетний зал">Бізнес-ланч</label>
+				<label><input class="checkbox-inline" type="checkbox" value="Банкетний зал">Кава</label>
+				<label><input class="checkbox-inline" type="checkbox" value="Банкетний зал">Сніданок</label>
+			</div>
+			
+			<div class="form-group">
                 <legend><h3>Контактна особа:</h3></legend>
-                    <p><label> Email <input type="text" name="email"/> </label></p>
-                    <p><label> Ім'я <input type="text" name="name"/> </label></p>
-                     <p><label>Телефон <input type="text" name="tel"/></label></p>
-
-                    <p><input type="submit" value="Надіслати"/></p>
-            </form>
+                    <label class="control-label col-sm-2"> Email <input class="form-control" type="email" name="email" placeholder="Введіть Email"/></label>
+                    <label class="control-label col-sm-2"> Ім'я <input class="form-control" type="text" name="name" placeholder="Введіть ПІБ"/></label>
+                    <label class="control-label col-sm-2">Телефон <input class="form-control" type="text" name="tel" placeholder="Введіть номер телефону"/></label>
+			</div>
+			<div class="form-group">
+                    <input class="btn btn-default" type="submit" value="Надіслати"/>
+			</div>
+        </form>
         </div>
+		</div>
 
 
 
