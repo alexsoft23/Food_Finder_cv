@@ -13,81 +13,121 @@
 	<script src="js/tooltip.js"></script>
 </head>
 <body>
-<div class="container-fluid">
-    <div class="jumbotron">
-        <div class="navig">
-            <nav role='navigation'>
-                <ul>
-                    <li><a href="index.html">Головна</a></li>
-                    <li><a href="about.html">Підприємцям</a>
-                        <ul>
-                            <li><a href="about.html">Інформація</a></li>
-                            <li><a href="registr.html">Зареєструвати свій заклад</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="about_us.html">Про нас</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <div class="food">
-            <h1>Food Finder Chernivtsy</h1>
-            <p>Сайт, де кожен зможе знайти де поїсти незалежно від смакових вподобань і розміру гаманця </p>
-        </div>
-    </div>
-
-	<div class="container">
-	<legend><h2>Реєстрація: </h2></legend>
-    <div class="form">
-        <form class="form-horizontal" action="./registr.html" method="POST" name="form1" id="form" role="form" >
-			
-			<div class="form-group">
-				<legend><h3>Загальна інфоррмація про заклад:</h3></legend>
-                <label class="control-label col-sm-4">Назва<input class="form-control" type="text" name="name" placeholder="Введіть назву" data-toggle="tooltip" title="Введіть назву закладу харчування"/> </label>
-                <label class="control-label col-sm-2">Тип<select class="form-control" id="type" name="type" data-toggle="tooltip" title="Виберіть тип вашого закладу">
-					<option>Бар</option>
-					<option>Кафе</option>
-					<option>Комплекс</option>
-					<option>Фаст-фуд</option>
-					<option>Кондитерська</option>
-					<option>Чайна</option>
-					<option>Кофейня</option>
-					<option>Паб</option>
-					<option>Піцерія</option>
-					<option>Ресторан</option>
-					<option>Столова</option>
-					<option>Суші-бар</option>
-				</select></label>
-			</div>
-			<div class="form-group">
-				<label class="control-label col-sm-6">Опис<textarea class="form-control" rows="5" id="info" placeholder="Введіть інформацію про ваш заклад яку ви бажаєте опублікувати" data-toggle="tooltip" title="Введіть інформацію про ваш заклад яку ви бажаєте опублікувати"></textarea></label>
+	<div class="container-fluid">
+		<div class="jumbotron">
+			<div class="navig">
+				<nav role='navigation'>
+					<ul>
+						<li><a href="index.html">Головна</a></li>
+						<li><a href="about.html">Підприємцям</a>
+							<ul>
+								<li><a href="about.html">Інформація</a></li>
+								<li><a href="registr.html">Зареєструвати свій заклад</a></li>
+							</ul>
+						</li>
+						<li><a href="about_us.html">Про нас</a></li>
+					</ul>
+				</nav>
 			</div>
 
-			
-			<div class="form-group">
-				<legend><h3>Додаткові опції:</h3></legend>
-                <label><input class="checkbox-inline" type="checkbox" value="Банкетний зал">Банкетний зал</label>
-				<label><input class="checkbox-inline" type="checkbox" value="Банкетний зал">Доставка їжі</label>
-				<label><input class="checkbox-inline" type="checkbox" value="Банкетний зал">Дитяче меню</label>
-                <label><input class="checkbox-inline" type="checkbox" value="Банкетний зал">Бізнес-ланч</label>
-				<label><input class="checkbox-inline" type="checkbox" value="Банкетний зал">Кава</label>
-				<label><input class="checkbox-inline" type="checkbox" value="Банкетний зал">Сніданок</label>
+			<div class="food">
+				<h1>Food Finder Chernivtsy</h1>
+				<p>Сайт, де кожен зможе знайти де поїсти незалежно від смакових вподобань і розміру гаманця </p>
 			</div>
-			
-			<div class="form-group">
-                <legend><h3>Контактна особа:</h3></legend>
-                    <label class="control-label col-sm-2"> Email <input class="form-control" type="email" name="email" placeholder="Введіть Email" data-toggle="tooltip" title="Введіть Email контактної особи"/></label>
-                    <label class="control-label col-sm-2"> Ім'я <input class="form-control" type="text" name="name" placeholder="Введіть ПІБ" data-toggle="tooltip" title="Введіть прізвище та імя контактної особи"/></label>
-                    <label class="control-label col-sm-2">Телефон <input class="form-control" type="text" name="tel" placeholder="Введіть номер телефону" data-toggle="tooltip" title="Введіть номер телефону контактної особи"/></label>
-			</div>
-			<div class="form-group">
-                    <input class="btn btn-default" type="submit" value="Надіслати"/>
-			</div>
-        </form>
-        </div>
 		</div>
 
+		<div class="container">
+		<legend><h2>Реєстрація: </h2></legend>
+		<div class="form">
+			<form class="form-horizontal" action="./registr.html" method="POST" name="form1" id="form" role="form" >
+				
+				<div class="form-group">
+					<legend><h3>Загальна інфоррмація про заклад:</h3></legend>
+					<label class="control-label col-sm-4">Назва<input class="form-control" type="text" name="name" placeholder="Введіть назву" data-toggle="tooltip" title="Введіть назву закладу харчування"/> </label>
+					<label class="control-label col-sm-2">Тип<select class="form-control" id="type" name="type" data-toggle="tooltip" title="Виберіть тип вашого закладу">
+						<option>Бар</option>
+						<option>Кафе</option>
+						<option>Комплекс</option>
+						<option>Фаст-фуд</option>
+						<option>Кондитерська</option>
+						<option>Чайна</option>
+						<option>Кофейня</option>
+						<option>Паб</option>
+						<option>Піцерія</option>
+						<option>Ресторан</option>
+						<option>Столова</option>
+						<option>Суші-бар</option>
+					</select></label>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-6">Опис<textarea class="form-control" rows="5" id="info" placeholder="Введіть інформацію про ваш заклад яку ви бажаєте опублікувати" data-toggle="tooltip" title="Введіть інформацію про ваш заклад яку ви бажаєте опублікувати"></textarea></label>
+				</div>
 
-</div>
+				
+				<div class="form-group">
+					<legend><h3>Додаткові опції:</h3></legend>
+					<label><input class="checkbox-inline" type="checkbox" value="Банкетний зал">Банкетний зал</label>
+					<label><input class="checkbox-inline" type="checkbox" value="Банкетний зал">Доставка їжі</label>
+					<label><input class="checkbox-inline" type="checkbox" value="Банкетний зал">Дитяче меню</label>
+					<label><input class="checkbox-inline" type="checkbox" value="Банкетний зал">Бізнес-ланч</label>
+					<label><input class="checkbox-inline" type="checkbox" value="Банкетний зал">Кава</label>
+					<label><input class="checkbox-inline" type="checkbox" value="Банкетний зал">Сніданок</label>
+				</div>
+				
+				<div class="form-group">
+					<legend><h3>Контактна особа:</h3></legend>
+						<label class="control-label col-sm-2"> Email <input class="form-control" type="email" name="email" placeholder="Введіть Email" data-toggle="tooltip" title="Введіть Email контактної особи"/></label>
+						<label class="control-label col-sm-2"> Ім'я <input class="form-control" type="text" name="name" placeholder="Введіть ПІБ" data-toggle="tooltip" title="Введіть прізвище та імя контактної особи"/></label>
+						<label class="control-label col-sm-2">Телефон <input class="form-control" type="text" name="tel" placeholder="Введіть номер телефону" data-toggle="tooltip" title="Введіть номер телефону контактної особи"/></label>
+				</div>
+				<div class="form-group">
+						<input class="btn btn-default" type="submit" value="Надіслати"/>
+				</div>
+			</form>
+			</div>
+			</div>
+
+
+	</div>
+
+	<footer>
+		<div id="footer" class="container text-center">
+		  <p>Made in Ukraine</p>
+		  <p><a href="/">2015 All rights reserved.&copy;</a><p>
+		  <div class="container text-right" style="color: #2d2d30;">
+			  <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal">For Admin</button>
+
+			  <div class="modal fade text-left" id="myModal" role="dialog">
+				<div class="modal-dialog modal-xs">
+				  <div class="modal-content">
+					<div class="modal-header">
+					  <button type="button" class="close" data-dismiss="modal">&times;</button>
+					  <h4 class="modal-title">Вхід в систему адміністрування</h4>
+					</div>
+					<div class="modal-body">
+					  <form role="form">
+						  <div class="form-group">
+							<label for="login">Логін:</label>
+							<input type="text" class="form-control" id="login">
+						  </div>
+						  <div class="form-group">
+							<label for="pwd">Пароль:</label>
+							<input type="password" class="form-control" id="pwd">
+						  </div>
+						  <div class="checkbox">
+							<label><input type="checkbox"> Запамятати</label>
+						  </div>
+						  <input class="btn btn-default" type="submit" value="Надіслати"/>
+						</form>
+					</div>
+					<div class="modal-footer">
+					  <button type="button" class="btn btn-default" data-dismiss="modal">Вихід</button>
+					</div>
+				  </div>
+				</div>
+			  </div>
+		  </div>
+		</div>
+	</footer>
 </body>
 </html>
