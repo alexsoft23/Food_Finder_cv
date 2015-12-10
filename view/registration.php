@@ -1,40 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
 
-    <link href="css1/style.css" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-
-    <title>Food Chernivtsy</title>
-	
-	<script src="js/tooltip.js"></script>
-</head>
-<body>
-	<div class="container-fluid">
-		<div class="jumbotron">
-			<div class="navig">
-				<nav role='navigation'>
-					<ul>
-						<li><a href="index.html">Головна</a></li>
-						<li><a href="about.html">Підприємцям</a>
-							<ul>
-								<li><a href="about.html">Інформація</a></li>
-								<li><a href="registr.html">Зареєструвати свій заклад</a></li>
-							</ul>
-						</li>
-						<li><a href="about_us.html">Про нас</a></li>
-					</ul>
-				</nav>
-			</div>
-
-			<div class="food">
-				<h1>Food Finder Chernivtsy</h1>
-				<p>Сайт, де кожен зможе знайти де поїсти незалежно від смакових вподобань і розміру гаманця </p>
-			</div>
-		</div>
 
 		<div class="container">
 		<legend><h2>Реєстрація: </h2></legend>
@@ -89,45 +53,3 @@
 
 
 	</div>
-
-	<footer>
-		<div id="footer" class="container text-center">
-		  <p>Made in Ukraine</p>
-		  <p><a href="/">2015 All rights reserved.&copy;</a><p>
-		  <div class="container text-right" style="color: #2d2d30;">
-			  <button type="button" class="btn btn-default btn-sm" style="background-color: #2d2d30; color: #f5f5f5;" data-toggle="modal" data-target="#myModal">For Admin</button>
-
-			  <div class="modal fade text-left" id="myModal" role="dialog">
-				<div class="modal-dialog modal-xs">
-				  <div class="modal-content">
-					<div class="modal-header">
-					  <button type="button" class="close" data-dismiss="modal">&times;</button>
-					  <h4 class="modal-title">Вхід в систему адміністрування</h4>
-					</div>
-					<div class="modal-body">
-					  <form role="form">
-						  <div class="form-group">
-							<label for="login">Логін:</label>
-							<input type="text" class="form-control" id="login">
-						  </div>
-						  <div class="form-group">
-							<label for="pwd">Пароль:</label>
-							<input type="password" class="form-control" id="pwd">
-						  </div>
-						  <div class="checkbox">
-							<label><input type="checkbox"> Запамятати</label>
-						  </div>
-						  <input class="btn btn-default" type="submit" value="Надіслати"/>
-						</form>
-					</div>
-					<div class="modal-footer">
-					  <button type="button" class="btn btn-default" data-dismiss="modal">Вихід</button>
-					</div>
-				  </div>
-				</div>
-			  </div>
-		  </div>
-		</div>
-	</footer>
-</body>
-</html>
